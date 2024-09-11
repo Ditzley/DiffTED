@@ -1,0 +1,45 @@
+name: pose_diffusion
+
+train_data_path: dataset/tpsm_train
+val_data_path: dataset/tpsm_val
+test_data_path: dataset/tpsm_test
+
+model_save_path: output/train
+random_seed: -1
+
+pose_dim: 100
+diff_hidden_dim: 256
+block_depth: 8
+
+# model params
+model: pose_diffusion
+
+hidden_size: 300
+input_context: audio
+
+classifier_free: True
+null_cond_prob: 0.1
+
+k: 49
+
+# train params
+epochs: 500
+batch_size: 128
+learning_rate: 0.0005
+
+# losses
+loss_noise: True
+loss_dist: True
+loss_pos: True
+
+# eval params
+eval_net_path: output/train_h36m_gesture_autoencoder/gesture_autoencoder_checkpoint_best.bin
+
+# dataset params
+motion_resampling_framerate: 25
+audio_sampling_rate: 26666
+n_poses: 34
+n_pre_poses: 4
+subdivision_stride: 10
+loader_workers: 4
+normalize: True

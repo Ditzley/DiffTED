@@ -1,0 +1,10 @@
+torch==2.0.1+cu117
+torchvision==0.15.2+cu117
+tensorboard
+numpy==1.24.3
+librosa==0.10.0post2
+tqdm
+timm
+einops
+configargparse
+matplotlib
