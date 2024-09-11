@@ -30,5 +30,16 @@ To run generate videos run:
 python scripts/test_tpsm.py long <checkpoint_path> <test_data_path>
 ```
 
+## Citation
+If you find our work useful, please kindly cite as:
+@InProceedings{Hogue2024,
+    author    = {Hogue, Steven and Zhang, Chenxu and Daruger, Hamza and Tian, Yapeng and Guo, Xiaohu},
+    title     = {DiffTED: One-shot Audio-driven TED Talk Video Generation with Diffusion-based Co-speech Gestures},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+    month     = {June},
+    year      = {2024},
+    pages     = {1922-1931}
+}
+
 ## Acknowledgement
 - The codebase is developed based on [DiffGesture](https://github.com/Advocate99/DiffGesture) of Zhu et al.
